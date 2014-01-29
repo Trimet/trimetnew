@@ -1,0 +1,105 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1" />
+        <title>{{ title }}</title>
+        <link href='http://fonts.googleapis.com/css?family=Exo+2|Tinos|Tenor+Sans|Ledger|Poiret+One|EB+Garamond' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+        <script type="text/javascript" src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/my.js' %}"></script>
+    </head>
+    <body>
+        
+        <div id="Wrapper">
+        <header id="header">
+    <!-- Hgroup Element Starts Here -->
+        <hgroup>
+            <div id="logo">
+                <!-- <img src="{% static 'logo.png' %}" /> -->
+            </div>
+            <!-- <h1>Creating HTML5 <span>Responsive Web Template Using Media Queries</span></h1>
+            <h2>A<small> Responsive</small> web template!</h2> -->
+        </hgroup>
+        <!-- Hgroup Element Ends Here -->
+
+        <!-- Nav Element Starts Here -->
+        <nav class="navigation">
+            <a class="mm_link {% if cmenu == "about" %}mm_active{% endif %}" href="/about/" onclick="return false" title="О компании">О компании</a>
+            <a class="mm_link {% if cmenu == "services" %}mm_active{% endif %}" href="/services/" onclick="return false" title="Услуги">Услуги</a>
+            <a class="mm_link {% if cmenu == "products" %}mm_active{% endif %}" href="/products/" onclick="return false" title="Продукция">Продукция</a>
+            <a class="mm_link {% if cmenu == "suppliers" %}mm_active{% endif %}" href="/suppliers/" onclick="return false" title="Поставщикам">Поставщикам</a>
+            <a class="mm_link {% if cmenu == "contacts" %}mm_active{% endif %}" href="/contacts/" onclick="return false" title="Контакты">Контакты</a>
+            <a class="mm_link {% if cmenu == "catalog" %}mm_active{% endif %}" href="/catalog/" onclick="return false" title="Онлайн Прайс">Онлайн Прайс</a>
+            <a class="mm_link {% if cmenu == "kabinet" %}mm_active{% endif %}" href="/kabinet/" onclick="return false" title="Войти в ЛК">Войти в ЛК</a>
+        </nav>
+
+        </header>
+        <div id="Wrapper2">
+            {% block sidebar %}{% endblock %}
+            {% block content %}{% endblock %}
+
+        </div>
+        <footer>
+        <div id="fleft">
+        <p id="copyr">
+            <span>© 2013 ООО «Тримет»</span> Копирование материалов возможно только с письменного разрешения компании
+        </p>
+        <p>
+            625014, <noindex>г. Тюмень</noindex>, ул. Республики, 278 а, строение 1 <span>+7 (3452) 520-670</span>
+            <a href="/contacts/maps/" title="Схемы проезда">Схемы проезда</a>
+        </p>
+    </div>
+    <div id="fcenter">
+        <ul id="obj-mmenu2">
+            <li>
+                <a href="/about/" title="О компании" rel="nofollow">О компании</a>
+            </li>
+            <li>
+                <a href="/services/" title="Услуги" rel="nofollow">Услуги</a>
+            </li>
+            <li>
+                <a href="/products/" title="Продукция" rel="nofollow">Продукция</a>
+            </li>
+            <li>
+                <a href="/suppliers/" title="Поставщикам" rel="nofollow">Поставщикам</a>
+            </li>
+            <li>
+                <a href="/contacts/" title="Контакты" rel="nofollow">Контакты</a>
+            </li>
+            <li>
+                <a href="/1cengine/site/" title="Купить Online" rel="nofollow">Купить Online</a>
+            </li>
+            <li>
+                <a href="/sitemap.py" title="Карта сайта">Карта сайта</a>
+            </li>
+        </ul>
+    </div>
+    <div id="fright">
+        <div id="autor">
+            <p>
+                Создание сайта
+            </p>
+            <a href="http://trimet.ru" title="Продажа металлопроката" target="_blank">ООО «Тримет»</a>
+        </div>
+        <div id="cards">
+            <div>
+                <a href="" onclick="javascript:window.open('vbvhelp.html','Chargeback','toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=1,width=450,height=400'); return False">
+                <img src="/static/visa_logo.gif"  /></a>
+                <a href="" onclick="javascript:window.open('vbvhelp.html','Chargeback','toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=1,width=450,height=400'); return False">
+                <img src="/static/visa_verified.gif" /></a>
+            </div>
+            <div>
+                <a href="" onclick="javascript:window.open('http://www.mastercardbusiness.com/mcbiz/index.jsp?template=/orphans&amp;content=securecodepopup','Chargeback','toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=1,width=550,height=380'); return False">
+                <img src="/static/mc_logo.gif" /></a>
+                <a href="" onclick="javascript:window.open('http://www.mastercardbusiness.com/mcbiz/index.jsp?template=/orphans&amp;content=securecodepopup','Chargeback','toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=1,width=550,height=380'); return False">
+                <img src="/static/mc_securecode.gif" /></a>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+        </div>
+    </body>
+</html>
