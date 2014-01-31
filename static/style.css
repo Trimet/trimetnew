@@ -94,7 +94,7 @@ Main Styles
 	text-align: left;
 	display: block;
 	line-height: 30px;
-	padding: 0px 20px;
+	padding-left: 20px;
 	float:right;
 	background: #2d3694;
 	clear: both;
@@ -109,7 +109,7 @@ Main Styles
 	font-size: 10pt;
 	text-shadow: 1px 1px 1px #111;
 	/*border: 1px solid #fff;*/
-	background: #2d3694; /* Old browsers */
+	/*background: #2d3694; /* Old browsers */*/
 	/*background: -moz-linear-gradient(top, #4e5dff 0%, #2d3694 47%, #2d3694 100%); /* FF3.6+ */
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4e5dff), color-stop(47%,#2d3694), color-stop(100%,#2d3694)); /* Chrome,Safari4+ */*/
 	/*background: -webkit-linear-gradient(top, #4e5dff 0%,#2d3694 47%,#2d3694 100%); /* Chrome10+,Safari5.1+ */*/
@@ -306,7 +306,12 @@ nav a.mm_active{
 	background: #2d3694;
 	text-shadow: none;
 	/*box-shadow: none;*/
-	box-shadow: inset 0 1px 1px 1px rgba(0,0,0,0.3);
+	/*box-shadow: inset 0 1px 1px 1px rgba(0,0,0,0.3);*/
+	/*border-top-right-radius: 40px 20px;
+	border-bottom-right-radius: 40px 20px;
+	border-top-left-radius: 40px 20px;
+	border-bottom-left-radius: 40px 20px;
+	/*border-radius: 30px 40px 40px 30px;*/
 	border:none;
 	color: #ffd700;
 }
@@ -377,6 +382,38 @@ footer{
 #nav_div{
 	display:block;
 	min-height: 32px;
+}
+
+.special_nav{
+	background-color: #ccff00;
+	height: 40px;
+	width:202px;
+	display:inline-block;
+	margin-bottom: -10px;
+	border-bottom-left-radius: 30px;
+
+	background: -moz-linear-gradient(top, #ccff00 0%, #ccff00 47%, #5da130 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ccff00), color-stop(47%,#ccff00), color-stop(100%,#5da130)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ccff00 0%,#ccff00 47%,#5da130 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ccff00 0%,#ccff00 47%,#5da130 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ccff00 0%,#ccff00 47%,#5da130 100%); /* IE10+ */
+	background: linear-gradient(top, #ccff00 0%,#ffd700 47%,#5da130 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.ccff00( startColorstr='#ccff00', endColorstr='#5da130',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+
+}
+
+.special_nav a{
+	background: none !important;
+	border-bottom: none;
+	color:black;
+	text-shadow: 1px 1px 1px #eee;
+}
+.special_nav a:hover{
+	color: #2d3694;
+}
+.special_nav a.mm_active{
+	color: #2d3694;
 }
 
 /* MEDIA RESIZING */
