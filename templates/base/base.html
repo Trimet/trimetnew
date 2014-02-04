@@ -5,8 +5,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width; initial-scale=1" />
         <title>{{ title }}</title>
-        <!-- <link href='http://fonts.googleapis.com/css?family=Exo+2|Tinos|Tenor+Sans|Ledger|Poiret+One|EB+Garamond' rel='stylesheet' type='text/css'> -->
-        <link href='http://fonts.googleapis.com/css?family=Tinos&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <!-- <link href='http://fonts.googleapis.com/css?family=Tinos&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'> -->
+        <link href='http://fonts.googleapis.com/css?family=Tinos:400,700|Noto+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
         <script type="text/javascript" src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/my.js' %}"></script>
@@ -28,15 +28,15 @@
         <!-- Nav Element Starts Here -->
         <div id="nav_div">
         <nav class="navigation">
-            <a class="mm_link {% if cmenu == "about" %}mm_active{% endif %}" href="/about/" onclick="return false" title="О компании">О компании</a>
-            <a class="mm_link {% if cmenu == "services" %}mm_active{% endif %}" href="/services/" onclick="return false" title="Услуги">Услуги</a>
-            <a class="mm_link {% if cmenu == "products" %}mm_active{% endif %}" href="/products/" onclick="return false" title="Продукция">Продукция</a>
-            <a class="mm_link {% if cmenu == "suppliers" %}mm_active{% endif %}" href="/suppliers/" onclick="return false" title="Поставщикам">Поставщикам</a>
-            <a class="mm_link {% if cmenu == "contacts" %}mm_active{% endif %}" href="/contacts/" onclick="return false" title="Контакты">Контакты</a>
             <span class="special_nav">
-                <a class="mm_link {% if cmenu == "catalog" %}mm_active{% endif %}" href="/catalog/" onclick="return false" title="Онлайн Прайс">Онлайн Прайс</a>
                 <a class="mm_link {% if cmenu == "kabinet" %}mm_active{% endif %}" href="/kabinet/" onclick="return false" title="Войти в ЛК">Войти в ЛК</a>
+                <a class="mm_link {% if cmenu == "catalog" %}mm_active{% endif %}" href="/catalog/" onclick="return false" title="Онлайн Прайс">Расчёт металла</a>
             </span>
+            <a class="mm_link {% if cmenu == "contacts" %}mm_active{% endif %}" href="/contacts/" onclick="return false" title="Контакты">Контакты</a>
+            <a class="mm_link {% if cmenu == "suppliers" %}mm_active{% endif %}" href="/suppliers/" onclick="return false" title="Поставщикам">Поставщикам</a>
+            <a class="mm_link {% if cmenu == "products" %}mm_active{% endif %}" href="/products/" onclick="return false" title="Продукция">Продукция</a>
+            <a class="mm_link {% if cmenu == "services" %}mm_active{% endif %}" href="/services/" onclick="return false" title="Услуги">Услуги</a>
+            <a class="mm_link {% if cmenu == "about" %}mm_active{% endif %}" href="/about/" onclick="return false" title="О компании">О компании</a>
         </nav>
         </div>
 

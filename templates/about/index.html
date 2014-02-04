@@ -4,7 +4,6 @@
 {% block sidebar %}
 <aside id="sidebar-wrapper">
     <nav class="sidebar">
-    <h1>Подразделы</h1>
     <ul>
     <li {% if smenu == "history" %}class="sm_active"{% endif %}><a href="/about/history/" title="История" class="sm_link" onclick="return false">История</a></li>
         <li {% if smenu == "photo" %}class="sm_active"{% endif %}><a href="/wordpress/photo/" title="История в фото" class="sm_link" onclick="return false">История в фото</a></li>
@@ -16,16 +15,6 @@
         <li {% if smenu == "vacancies" %}class="sm_active"{% endif %}><a href="/about/vacancies/" title="Вакансии" class="sm_link" onclick="return false">Вакансии</a></li>
     </ul>
     </nav>
-    <nav class="sidebar">
-    <h1>Их может быть несколько!</h1>
-    <ul>
-        <li><a href="#" target="_blank">Facebook</a>
-        <li><a href="#" target="_blank">Twitter</a>
-    </ul>
-    </nav>
-<section class="sidebar">
-И доп. пространство для всякого!
-</section>
 
 </aside>
 {% endblock %}
