@@ -249,53 +249,51 @@ background:url(../images/resize.png) repeat scroll 0% 0% transparent;
 
 /* Self-defined */
 
-/*.obj-ulinks {
-    text-align: left;
-    display: block;
+.obj-ulinks div {
+    height:100%;
+}
 
-    padding: 5px 0px;
-    margin:0px auto;
-
-    max-width: 922px;
-}*/
-.obj-ulinks {
-    background: url("/static/mainpage/u-links.png") no-repeat scroll 0px 100% transparent;
-    border: 1px solid rgb(227, 227, 227);
+table.obj-ulinks{
+    /*background: url("/static/mainpage/u-links.png") no-repeat scroll 0px 100% transparent;*/
+    border-top: 1px solid rgb(227, 227, 227);
+    border-left: 1px solid rgb(227, 227, 227);
     margin: 24px 0px 8px;
     height: 1%;
     overflow: hidden;
     text-align: left;
+
+    float:right;
 }
 
-.obj-ulinks div {
-float: left;
+.obj-ulinks td {
+
+border-right: 1px solid rgb(227, 227, 227);
+border-bottom: 1px solid rgb(227, 227, 227);
+
 min-height: 170px;
-height: auto !important;
+height: 170px;
 margin-right: 1px;
-width: 241px;
+width: 242px;
+font-size: 11px;
+background: url("/static/mainpage/u-links-arrow.png");
+background-position: right bottom;
+background-repeat: no-repeat;
 
-    /*display: block;*/
-    /*float:left;*/
-    /*margin: 4px 4px;*/
-    font-size: 11px;
-    /*border: 1px solid #aaa;*/
-    /*box-shadow: 0px 1px 1px rgba(0,0,0,0.3);*/
-    /*max-width: 220px;*/
-    /*width:24%;*/
-    /*min-width:200px;*/
-    /*height: 170px;*/
 }
-.obj-ulinks div.ulinks1 { background: url('/static/mainpage/ulinks1.jpg') no-repeat scroll 100% 15px transparent; }
-.obj-ulinks div.ulinks2 { background: url('/static/mainpage/ulinks2.jpg') no-repeat scroll 100% 15px transparent; }
-.obj-ulinks div.ulinks3 { background: url('/static/mainpage/ulinks3.jpg') no-repeat scroll 100% 15px transparent; }
-.obj-ulinks div.ulinks4 { background: url('/static/mainpage/ulinks4.jpg') no-repeat scroll 100% 15px transparent; }
+
+
+.obj-ulinks .ulinks1 div{ background: url('/static/mainpage/ulinks1.jpg') no-repeat scroll 100% 15px transparent; }
+.obj-ulinks .ulinks2 div{ background: url('') no-repeat scroll 100% 15px transparent; }
+.obj-ulinks .ulinks3 div{ background: url('/static/mainpage/ulinks2.jpg') no-repeat scroll 100% 15px transparent; }
+.obj-ulinks .ulinks4 div{ background: url('/static/mainpage/ulinks4.jpg') no-repeat scroll 100% 15px transparent; }
 
 .obj-ulinks h3 {
-    font-size: 15px;
+    font-size: 12pt;
     display: block ! important;
     margin: 23px 18px 0px ! important;
     float: left;
     padding: 0px 0px 6px ! important;
+    font-weight: 400;
 }
 .obj-ulinks h3 a:link, .obj-ulinks h2 a:active, .obj-ulinks h2 a:visited {
     border-bottom: 3px solid rgb(241, 242, 242);
@@ -308,6 +306,52 @@ width: 241px;
     clear: both;
     margin: 0px;
     padding: 1px 87px 25px 18px;
+    font-size:7pt;
+    line-height: 18px;
+}
+
+.obj-ulinks2{
+    background-color: lightgray;
+    border-radius: 20px 20px;
+    margin-bottom:10px;
+    box-shadow: inset 0 1px 1px 1px rgba(0,0,0,0.1);
+    width:auto;
+    padding:20px;
+}
+
+.obj-ulinks2 a{
+    margin-right: 15px;
+    line-height: 20px;
+    font-size: 8pt;
+    white-space: nowrap;
+}
+
+.obj-catalog{
+    width:47%;
+    margin-top:24px;
+    border-bottom: none;
+}
+
+.price_download{
+    font-size: 11pt;
+    display:none;
+}
+.price_download a{
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.download{
+background: url("/static/img/download.png") no-repeat scroll 0px 100% transparent;
+padding-left: 20px;
+}
+
+.mod-text{
+    background-color: #eeeeee;
+    padding:20px;
+    padding-top:5px;
+    margin-top:20px;
+    height:325px;
 }
 
 .mainpage_show{
